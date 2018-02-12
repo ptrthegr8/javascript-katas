@@ -6,7 +6,7 @@ const bestThing = "The best thing about a boolean is even if you are wrong you a
 
 function printResult (result1, result2) {
 var para = document.createElement("P");                      
-var t = document.createTextNode(JSON.stringify(result1)); 
+var t = document.createTextNode(result1); 
 para.appendChild(t);                                          
 document.getElementById(result2).appendChild(para);
 }
@@ -38,15 +38,19 @@ const lotrcitieswithcommas = lotrCitiesArray.join(", ");
 printResult (lotrcitieswithcommas, "div4");
 
 // 5. Display the first 5 cities in lotrCitiesArray
-const threelotrcities = lotrCitiesArray.slice(0,5)
-console.log(threelotrcities);
+const firstthreelotrcities = lotrCitiesArray.slice(0,5)
+printResult (JSON.stringify(firstthreelotrcities), "div5");
 
 // 6. Display the last 5 cities in lotrCitiesArray
-
+const lastfivelotrcities = lotrCitiesArray.slice(3,8)
+printResult (JSON.stringify(lastfivelotrcities), "div6");
 // 7. Display the 3rd to 5th city in lotrCitiesArray
+const thirdToFifthLotrCities = lotrCitiesArray.slice(2,5)
+printResult (JSON.stringify(thirdToFifthLotrCities), "div7");
 
 // 8. Using splice, remove "Rohan" from lotrCitiesArray
-
+const noRohan = lotrCitiesArray.splice(2, 1, "");
+printResult (JSON.stringify(lotrCitiesArray), "div8");
 // 9. Using splice, remove all cities after "Dead Marshes" in lotrCitiesArray
 
 // 10. Using splice, add "Rohan" back to lotrCitiesArray right after "Gondor"
