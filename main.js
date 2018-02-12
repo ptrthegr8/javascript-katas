@@ -52,14 +52,24 @@ printResult (JSON.stringify(thirdToFifthLotrCities), "div7");
 const noRohan = lotrCitiesArray.splice(2, 1, "");
 printResult (JSON.stringify(lotrCitiesArray), "div8");
 // 9. Using splice, remove all cities after "Dead Marshes" in lotrCitiesArray
+const noCitiesAfterDeadMarshes = lotrCitiesArray.splice(6,8,"");
+printResult (JSON.stringify(lotrCitiesArray), "div9");
 
 // 10. Using splice, add "Rohan" back to lotrCitiesArray right after "Gondor"
-
+const Rohan = lotrCitiesArray.splice(2, 1, "Rohan");
+printResult (JSON.stringify(lotrCitiesArray), "div10");
 // 11. Using splice, rename "Dead Marshes" to "Deadest Marshes" in lotrCitiesArray
+const deadAF = lotrCitiesArray.splice(5, 1, "Deadest Marshes");
+printResult (JSON.stringify(lotrCitiesArray), "div11");
 
 // 12. Using slice, display the first 14 characters from bestThing
+const firstFourteen = bestThing.slice(0, 17);
+printResult(firstFourteen, "div12");
+
 
 // 13. Using slice, display the last 12 characters from bestThing
+//const lastTwelve = bestThing.slice()
+
 
 // 14. Using slice, display characters between the 23rd and 38th position of bestThing (i.e., "boolean is even"
 
