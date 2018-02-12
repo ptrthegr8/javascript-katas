@@ -13,6 +13,7 @@ document.getElementById(result2).appendChild(para);
 
 // 1. Display an array from the cities in gotCitiesCSV *USE JSON.stringify(XXXX) for any answers with an array as the output*
 const cities = gotCitiesCSV.split(",");
+
 var para = document.createElement("P");                      
 var t = document.createTextNode(JSON.stringify(cities)); 
 para.appendChild(t);                                          
@@ -63,32 +64,61 @@ const deadAF = lotrCitiesArray.splice(5, 1, "Deadest Marshes");
 printResult (JSON.stringify(lotrCitiesArray), "div11");
 
 // 12. Using slice, display the first 14 characters from bestThing
-const firstFourteen = bestThing.slice(0, 17);
+const firstFourteen = bestThing.slice(0, 14);
 printResult(firstFourteen, "div12");
 
 
 // 13. Using slice, display the last 12 characters from bestThing
-//const lastTwelve = bestThing.slice()
+const lastTwelve = bestThing.slice(69, 81);
+printResult (lastTwelve, "div13");
 
 
 // 14. Using slice, display characters between the 23rd and 38th position of bestThing (i.e., "boolean is even"
+const tween23and38 = bestThing.slice(23, 38);
+printResult (tween23and38, "div14");
 
-// Repeat #13 using substring instead of slice.
-// Repeat #14 using substr instead of slice.
-// Find and display the index of "only" in bestThing
-// Find and display the index of the last word in bestThing
-// Find and display all cities from gotCitiesCSV  that use double vowels ("aa","ee", etc.)
-// Find and display all cities from lotrCitiesArray that end with "or"
-// Find and display all the words in bestThing that start with a "b"
-// Display "Yes" or "No" if lotrCitiesArray includes "Mirkwood"
-// Display "Yes" or "No" if lotrCitiesArray includes "Hollywood"
-// Display the index of "Mirkwood" in lotrCitiesArray
-// Find and display the first city in lotrCitiesArray that has more than one word
-// Reverse the order in lotrCitiesArray
-// Sort lotrCitiesArray alphabetically
-// Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)
-// Using pop, remove the last city from lotrCitiesArray
-// Using push, add back the city from lotrCitiesArray that was removed in #29 to the back of the array
-// Using shift, remove the first city from lotrCitiesArray
-// Using unshift, add back the city from lotrCitiesArray that was removed in #31 to the front of the array
+// 15. Repeat #13 using substring instead of slice.
+const lastTwelvePt2 = bestThing.substring(69);
+printResult (lastTwelvePt2, "div15");
+// 16. Repeat #14 using substr instead of slice.
+const tween23and38Pt2 = bestThing.substr(23, 15);
+printResult(tween23and38Pt2, "div16");
+// 17. Find and display the index of "only" in bestThing
+const indexofonlyinbestthing = bestThing.indexOf("only");
+printResult(indexofonlyinbestthing, "div17");
+// 18. Find and display the index of the last word in bestThing
+const indexofonlyinbestthingLast = bestThing.lastIndexOf("bit");
+printResult (indexofonlyinbestthingLast, "div18");
+// 19. Find and display all cities from gotCitiesCSV that use double vowels ("aa","ee", etc.)
+// var vowels = new Array ["aa","ee","ii","oo","uu"];
+// for (i = 0; i < .length; i++) {
+//     if (gotCitiesCSV.includes(i) === true){
+//         console.log(gotCitiesCSV[i]);
+//     } else { console.log('poop')}
+// }
+// 20. Find and display all cities from lotrCitiesArray that end with "or"
+
+// 21. Find and display all the words in bestThing that start with a "b"
+
+// 22. Display "Yes" or "No" if lotrCitiesArray includes "Mirkwood"
+
+// 23. Display "Yes" or "No" if lotrCitiesArray includes "Hollywood"
+
+// 24. Display the index of "Mirkwood" in lotrCitiesArray
+
+// 25. Find and display the first city in lotrCitiesArray that has more than one word
+
+// 26. Reverse the order in lotrCitiesArray
+
+// 27. Sort lotrCitiesArray alphabetically
+
+// 28. Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)
+
+// 29. Using pop, remove the last city from lotrCitiesArray
+
+// 30. Using push, add back the city from lotrCitiesArray that was removed in #29 to the back of the array
+
+// 31. Using shift, remove the first city from lotrCitiesArray
+
+// 32. Using unshift, add back the city from lotrCitiesArray that was removed in #31 to the front of the array
 
