@@ -89,9 +89,9 @@ printResult(indexofonlyinbestthing, "div17");
 // 18. Find and display the index of the last word in bestThing
 const indexofonlyinbestthingLast = bestThing.lastIndexOf("bit");
 printResult (indexofonlyinbestthingLast, "div18");
-// 19. Find and display all cities from gotCitiesCSV that use double vowels ("aa","ee", etc.)
+//19. Find and display all cities from gotCitiesCSV that use double vowels ("aa","ee", etc.)
 // var vowels = new Array ["aa","ee","ii","oo","uu"];
-// for (i = 0; i < .length; i++) {
+// for (i = 0; i < vowels.length; i++) {
 //     if (gotCitiesCSV.includes(i) === true){
 //         console.log(gotCitiesCSV[i]);
 //     } else { console.log('poop')}
@@ -109,16 +109,24 @@ printResult (indexofonlyinbestthingLast, "div18");
 // 25. Find and display the first city in lotrCitiesArray that has more than one word
 
 // 26. Reverse the order in lotrCitiesArray
+ let lotrCitiesReversed = lotrCitiesArray.reverse();
+printResult(JSON.stringify(lotrCitiesReversed), "div26");
 
 // 27. Sort lotrCitiesArray alphabetically
+let lotrCitiesAlpha = lotrCitiesArray.sort();
+printResult(JSON.stringify(lotrCitiesAlpha), "div27");
 
 // 28. Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)
 
 // 29. Using pop, remove the last city from lotrCitiesArray
-
+let lotrCitiesLastEle = lotrCitiesArray.pop()
+printResult(JSON.stringify(lotrCitiesArray), "div29");
 // 30. Using push, add back the city from lotrCitiesArray that was removed in #29 to the back of the array
-
+lotrCitiesArray.push("Rohan");
+printResult(JSON.stringify(lotrCitiesArray), "div30");
 // 31. Using shift, remove the first city from lotrCitiesArray
-
+let lotrCitiesFirstEle = lotrCitiesArray.shift();
+printResult(JSON.stringify(lotrCitiesArray), "div31");
 // 32. Using unshift, add back the city from lotrCitiesArray that was removed in #31 to the front of the array
-
+let lotrCitiesFirstEleAddedBack = lotrCitiesArray.unshift("");
+printResult(JSON.stringify(lotrCitiesArray), "div32");
